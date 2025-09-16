@@ -1,0 +1,41 @@
+﻿// Add this JavaScript to your existing <script> section
+
+// Theme Toggle Functionality
+function initThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('.theme-toggle-icon');
+    const root = document.documentElement;
+    
+    // Check for saved theme preference or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    root.classList.toggle('light', savedTheme === 'light');
+    themeIcon.textContent = savedTheme === 'light' ? '' : '';
+    
+    // Theme toggle event listener
+    themeToggle.addEventListener('click', () => {
+        const isLight = root.classList.toggle('light');
+        const theme = isLight ? 'light' : 'dark';
+        
+        // Save theme preference
+        localStorage.setItem('theme', theme);
+        
+        // Update icon
+        themeIcon.textContent = isLight ? '' : '';
+        
+        // Add smooth transition
+        root.style.transition = 'all 0.3s ease';
+        setTimeout(() => {
+            root.style.transition = '';
+        }, 300);
+    });
+}
+
+// Initialize theme toggle when DOM is loaded
+document.addEventListener('DOMContentLoaded', initThemeToggle);
+
+// Also initialize if DOM is already loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeToggle);
+} else {
+    initThemeToggle();
+}

@@ -1,36 +1,24 @@
-# Pawan Surya – Developer Portfolio 🚀
+﻿# My Portfolio
 
-Welcome to my personal portfolio, built using **Node.js**, **Express**, **EJS**, and **Bootstrap**. This site showcases my journey, skills, and projects—from school days to my current role in IT.
+Simple, fast, and responsive portfolio starter.
 
-## 🔍 Features
-- Responsive design with Bootstrap
-- Timeline of my academic and professional milestones
-- Integrated PDF resume
-- Modular MVC architecture
-- Hosted for free via GitHub Pages
+## Quick start
+- Open `Portpholio/myPortpholio/index.html` in your browser.
+- Edit your info in `index.html` (name, links, projects).
+- Adjust styles in `assets/css/styles.css`.
 
-## 🛠️ Tech Stack
-- Node.js + Express
-- EJS templating
-- Bootstrap 5
-- GitHub Pages (static hosting)
+## Customize
+- Replace placeholder text: name, bio, skills, and projects.
+- Add your social links in the footer.
+- Put images in `assets/img/` and reference them in the projects.
+- Colors: tweak CSS variables in `:root` and `:root.light`.
 
-## 📌 Milestones
-- 🎓 2010: School Graduation  
-- 🛠️ Diploma & Engineering  
-- 🎓 MBA  
-- 💼 First IT Job  
-- 🚀 Current Role & Aspirations
+## Features
+- Dark/light mode toggle (saved in `localStorage`).
+- Smooth scrolling and active nav highlight.
+- Responsive grid for projects.
 
-## 📄 Resume
-You can view or download my resume [here](link-to-your-resume.pdf).
-
-## 🌐 Live Demo
-[Visit My Portfolio](https://pawan-surya.github.io)
-
-## 📬 Contact
-Feel free to connect via [LinkedIn](your-link) or [Email](mailto:your@email.com)
-
----
-
-Want help writing the timeline section in EJS or linking your resume? I can scaffold that next.
+## Deploy options
+- GitHub Pages: push to a repo and enable Pages.
+- Netlify/Vercel: drag-and-drop or connect repo.
+- Static hosting: host the folder on any static server.
